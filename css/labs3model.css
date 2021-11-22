@@ -1,0 +1,70 @@
+body {
+    background-image: url("../images/a1labs3d3.jpg");
+
+}
+.trangcv{
+    font-family: "Arial";
+    width: 800px;
+    height: 1000px;
+    background: snow;
+    margin-left: 600px;
+    margin-right: 600px;
+    margin-top: 50px;
+}
+.trangdaude{
+    width: 800px;
+    height: 200px;
+    background: slategray;
+}
+.trangnoidung{
+    padding-left: 300px;
+    width: 400px;
+    text-transform: none;
+    text-align: justify;
+}
+.trangdaude .trangnoidung #profile{
+    width: 400px;
+    padding-top: 50px;
+    line-height: 2.0;
+    text-transform: capitalize;
+}
+#ten{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 35px;
+    padding-top: 70px;
+}
+#vitri{
+    margin-top: -30px;
+}
+
+.inforcanhan{
+    width: 230px;
+    height: 980px;
+    background: silver;
+    text-align: left;
+    padding-left: 20px;
+    text-transform: capitalize;
+    margin-left: 25px;
+    margin-top: -180px;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: left;
+}
+h2{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.doanvan1{
+    line-height: 2.0;
+}
+.doanvan3{
+    line-height: 2.8;
+}
+#anhchandung{
+    margin-left: 35px;
+    margin-top: 20px;
+}
