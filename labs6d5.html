@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>labs6d5</title>
+    <link rel="stylesheet" href="css/labs6d5css.css">
+</head>
+<body>
+    <div class="Khung1">
+        <div class="Khung2">
+            <p>Create task</p>
+                <input class="Type" type="text" name="Type" placeholder="Type" required/>
+
+                <select class="Company" name="Comany" required>
+                    <option>Company</option>
+                    <option value="TP"> Thai Phat </option>
+                    <option value="VG"> Vin Group </option>
+                    <option value="VT"> Viettel </option>
+                </select>
+
+                <select class="Opportunity" name="Opportunity" required>
+                    <option>Opportunity</option>
+                    <option value="o1"> Co hoi 1 </option>
+                    <option value="o2"> Co hoi 2 </option>
+                    <option value="o3"> Co hoi 3 </option>
+                </select>
+
+                <input class="Task" type="text" name="Task" placeholder="Task" required/>
+
+                <select class="CC" name="CC" required>
+                    <option>CC</option>
+                    <option value="cc1"> CC 1 </option>
+                    <option value="cc2"> CC 2 </option>
+                    <option value="cc3"> CC 3 </option>
+                </select>
+            <div class="request">
+                <label id="request">Nature of request</label>
+                <br/>
+                <label><input type="checkbox" name="request" value="q1"/>Ads review</label>
+                <br/>
+                <label><input type="checkbox" name="request" value="q2"/>Keywords review</label>
+                <br/>
+                <label><input type="checkbox" name="request" value="q3"/>Extensions review</label>
+            </div>
+
+            <div class="status">
+                <label id="request">Current reviewable status</label>
+                <br/>
+                <label><input type="radio" name="status" value="s1"/>Approved</label>
+                <br/>
+                <label><input type="radio" name="status" value="s2"/>Not approved</label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
