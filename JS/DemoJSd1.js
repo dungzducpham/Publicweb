@@ -86,14 +86,34 @@ function Vietlot() {
 }
 Vietlot();
 
-/*else if(count == 3){
-        console.log("Vé này đã trúng giải khuyến khích "+ array[i]);
-    }else if(count == 4){
-        console.log("Vé này đã trúng giải 2 "+ array[i]);
-    }else if(count == 5){
-        console.log("Vé này đã trúng giải 1 "+ array[i]);
-    }else{
-        console.log("Vé này không trúng giải nào "+ array[i]);
+ /*Trường hợp số có thể trùng nhau:
+   function kiemtrave(){
+        for (var i = 0; i < 5; i++) {
+            var count = 0;
+            for( var j = 0;j<6;) {
+                for (var z = 0; z < 6;) {
+                    if (array[i][j] < Docdac[z]) {
+                        j++;
+                    } else if (array[i][j] > Docdac[z]) {
+                        z++;
+                    } else {
+                        j++;
+                        z++;
+                        count++;
+                    }
+                }
+            }
+            if(count == 6){
+                console.log("Vé này đã trúng giải Vietlot" + array[i]);
+            }else if(count == 5){
+                console.log("Vé này đã trúng giải 1: " + array[i]);
+            }else if(count == 4){
+                console.log("Vé này đã trúng giải 2: " + array[i]);
+            }else if(count == 3){
+                console.log("Vé này đã trúng giải 3: " + array[i]);
+            }else{
+                console.log("Vé này ko trúng giải: "+array[i]);
+            }
+        }
     }
-    break;
-    */
+*/
