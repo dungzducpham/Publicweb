@@ -28,12 +28,10 @@ function Vietlot() {
             }
         }
     }
-    console.log(array);
     var Docdac = [];
     for (var i = 0; i < 6; i++) {
         Docdac[i] = parseInt(Math.random() * 45);
     }
-    console.log(Docdac);
     for (var i = 0; i < 5; i++) {
             for (var m = 0; m < array[i].length - 1; m++) {
                 for (var n = 0; n < array[i].length - m - 1; n++) {
@@ -45,7 +43,6 @@ function Vietlot() {
                 }
             }
         }
-    console.log(array);
     for( var i = 0; i<Docdac.length-1;i++){
         for( var j = 0;j<Docdac.length-i-1;j++){
             if(Docdac[j]>Docdac[j+1]){
@@ -55,21 +52,30 @@ function Vietlot() {
             }
         }
     }
+    console.log(array);
     console.log(Docdac);
     function kiemtrave(){
+        var count = 0;
         for (var i = 0; i < 5; i++) {
             for (var j = 0; j < 6;) {
                 if(array[i][j] == Docdac[j]){
                     j++;
+                    count ++;
                 }else{
-                    console.log("Vé này ko trúng giải"+ array[i]);
+                    if(j==6){
+                        console.log("Vé này đã trúng giải Vietlot"+ array[i]);
+                    }else if(count == 3){
+                        console.log("Vé này đã trúng giải khuyến khích "+ array[i]);
+                    }else if(count == 4){
+                        console.log("Vé này đã trúng giải 2 "+ array[i]);
+                    }else if(count == 5){
+                        console.log("Vé này đã trúng giải 1 "+ array[i]);
+                    }else{
+                        console.log("Vé này không trúng giải nào "+ array[i]);
+                    }
                     break;
                 }
-                if(j==6){
-                    console.log("Vé này đã trúng giải"+ array[i]);
-                }
             }
-
         }
     }
     kiemtrave();
