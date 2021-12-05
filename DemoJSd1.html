@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo JS</title>
+</head>
+<body>
+<script type="text/javascript">
+    // code js tai day
+    var x; // Khai báo biên bên js - dynamic datatype
+    // number
+    //string
+    //array
+    //object
+    // function
+function Test() {
+    x = 10;
+    x = x + 5;
+    console.log(x);
+    x = "Xin chao cac ban";
+    console.log(x);
+    x = 17;
+    var y = "Xin chao cac ban";
+    y = x + y; // Ghep chuoi
+    console.log(y);
+    /*
+    number + number => number
+    number + string => string
+    string + string => string
+    if, else va for van giong code C
+     */
+    console.log("Gia tri cua x =" + x);
+    if (x > 10) {
+    } else {
+    }
+    for (var i = 0; i < 10; i++) {
+        console.log("Hello my friends")
+    }
+    var arr = [];// Khong can nói rõ kiểu dữ liệu và kích thước mảng
+    arr[0] = 1;
+    arr[1] = "Xin chao";
+    arr[2] = [];
+    arr[2][0] = 15;
+    arr[2][1] = "Aptech";
+    arr[2][2] = [1, 2, 3, 4];
+    arr[3] = 10; // Độ sâu array tùy ý
+
+    // Sắp xếp theo thứ tự tăng dần
+    var ary = [3, 12, 9, 90, 1, 0, 15, 29];
+    /*for( var i = 0; i<ary.length-1;i++){
+        for( var j = 0;j<ary.length-i-1;j++){
+            if(ary[j]>ary[i]){
+                var temp = ary[j];
+                ary[j] = ary[j+1];
+                ary[j+1] = temp;
+            }
+        }
+    }
+     */
+    console.log("Mảng mới là:" + ary);
+    ary.push(255); // Them gia trị trong ngoặc đơn vào cuối danh sách mảng
+    ary[ary.length] = 255; // Cách thêm giá trị vào cuối mảng.
+    // function
+    function TinhTong(a, b) {
+        return a + b;
+    }
+
+    var c = TinhTong(5, 6);
+    console.log("c = " + c);
+    // Không cần khai báo trước sau, chỉ cần cùng 1 file script là dùng được funtion đã khai báo.
+    // Một số hàm tham khảo:
+    alert(" Cấm abcdxyz!"); // Hàm void ko trả về giá trị gì cả
+    var kq = confirm("Are you sure?"); // Kiểu boolean
+    console.log(kq);
+    var p = prompt("What's your name?");
+    // Return String Nếu ko nhập gì ấn ok nó sẽ trả về string chống nếu ân cancel thì nó sẽ trả về null
+    console.log(p);
+    p = parseInt(p); // Hàm convert p đg là string => kiểu int
+}
+    // 18 -> 18
+    // 18abc -> 18
+    // 1a8c ->1
+    // a18c -> NaN : not a number
+    // Làm ví dụ: Nhập vào 2 số nguyên tìm ước chung lớn nhất và bội chung nhỏ nhất của 2 số.
+function Tamgiac() {
+    do {
+        var m = prompt("Mời nhập số m:")
+        var n = prompt("Mời nhập số n:")
+        var e = prompt("Mời nhập số e:")
+        m = parseInt(m);
+        n = parseInt(n);
+        e = parseInt(e);
+        if (isNaN(m) || isNaN(n) || isNaN(e) || m <= 0 || n <= 0 || e <= 0 || m + n <= e || n + e <= m || e + m <= n) {
+            alert("Nhập sai mời nhập lại");
+        }
+    } while (isNaN(m) || isNaN(n) || isNaN(e) || m <= 0 || n <= 0 || e <= 0 || m + n <= e || n + e <= m || e + m <= n);
+    /*var i,z;
+     for(i=n;i<m*n;i++){
+         if(i%m == 0 && i%n == 0){
+             break;
+         }
+     }
+     for(z=2;z<=m;z++){
+         if(m%z ==0 && n%z==0){
+             break;
+         }
+     }
+     if(z>m){
+         console.log("Ước chung lớn nhất của"+m +"và"+n+"là:"+1);
+     }else{
+         console.log("Ước chung lớn nhất của"+m +"và"+n+"là:"+z);
+     }
+     console.log("Bội chung nhỏ nhất của"+m +"và"+n+"là:"+i);
+        */
+    // Nhập 3 số tính chu vi diện tích của 3 cạnh tam giác nếu 3 số đó là 3 cạnh tam giác
+    if (m + n > e && n + e > m && e + m > n) {
+        var Chuvi = m + n + e;
+        var P1 = Chuvi / 2;
+        var Dientich = Math.sqrt(P1 * (P1 - m) * (P1 - n) * (P1 - e));
+        console.log(" Chu vi tam giác là" + Chuvi + " Diện tích là:" + Dientich);
+    }
+}
+    // Các tạo 1 số ngẫu nhiên 0 đến 100: parseInt(Math.random()*100);
+    // Cho người dùng nhập 1 số trong khoảng 0-100. Kiểm tra xem có trúng giải hay ko và thông báo
+
+</script>
+<script type="text/javascript" src="JS/DemoJSd1.js"></script>
+</body>
+</html>
