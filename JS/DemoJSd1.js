@@ -61,10 +61,11 @@ function Vietlot() {
                 if(array[i][j] == Docdac[j]){
                     j++;
                     count ++;
+                    if(j==6) {
+                        console.log("Vé này đã trúng giải Vietlot" + array[i]);
+                    }
                 }else{
-                    if(j==6){
-                        console.log("Vé này đã trúng giải Vietlot"+ array[i]);
-                    }else if(count == 3){
+                    if(count == 3){
                         console.log("Vé này đã trúng giải khuyến khích "+ array[i]);
                     }else if(count == 4){
                         console.log("Vé này đã trúng giải 2 "+ array[i]);
