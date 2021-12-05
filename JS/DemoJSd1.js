@@ -18,14 +18,19 @@ function Vietlot() {
     var flag = 0;
     for (var i = 0; i < 5; i++) {
         array[i] = [];
-        for (var j = 0; j < 6;) {
-            flag = 0;
-            array[i][j] = parseInt(prompt("Chọn cặp số " + i + j));
-            if (array[i][j] > 45 || array[i][j] < 0 || isNaN(array[i][j])) {
-                flag = 1;
-            } else {
-                j++;
-            }
+        for (var j = 0; j < 6;j++) {
+            do{
+                flag =0;
+                array[i][j] = parseInt(prompt("Chọn cặp số " + i + j));
+                if (array[i][j] > 45 || array[i][j] < 0 || isNaN(array[i][j])) {
+                    flag = 1;
+                }
+                for (var l = 0; l < j; l++) {
+                    if (array[i][j] == array[i][l]) {
+                        flag = 1;
+                    }
+                }
+            }while (flag == 1);
         }
     }
     var Docdac = [];
