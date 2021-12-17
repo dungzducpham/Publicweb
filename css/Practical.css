@@ -1,0 +1,50 @@
+body{
+    background-color: darkslategray;
+}
+.mainblock{
+    width: 500px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    background-color: white;
+}
+header{
+    background-color: blueviolet;
+    padding: 15px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+img{
+    background-color: blueviolet;
+    margin: 0;
+    padding: 0;
+}
+label{
+    margin-top: 20px;
+}
+input{
+    background-color: silver;
+    height: 30px;
+    border: none;
+
+}
+button{
+
+    bottom: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 70px;
+    padding-right: 70px;
+    color: #ffffff !important;
+    border-radius: 5px;
+    background: blueviolet;
+    border: 1px solid #9B6A1D;
+    transition: 0.4s;
+}
+.mainsection{
+    padding: 30px;
+}
