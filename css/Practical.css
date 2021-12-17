@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     background-color: darkslategray;
 }
@@ -8,6 +13,7 @@ body{
     margin-right: auto;
     margin-top: 100px;
     background-color: white;
+    font-size: 20px;
 }
 header{
     background-color: blueviolet;
@@ -21,17 +27,15 @@ img{
     margin: 0;
     padding: 0;
 }
-label{
-    margin-top: 20px;
-}
+
 input{
     background-color: silver;
-    height: 30px;
+    height: 50px;
     border: none;
+    text-align: center;
 
 }
 button{
-
     bottom: 20px;
     cursor: pointer;
     font-size: 20px;
@@ -44,7 +48,30 @@ button{
     background: blueviolet;
     border: 1px solid #9B6A1D;
     transition: 0.4s;
+    width: 400px;
+    margin-bottom: 20px;
 }
 .mainsection{
     padding: 30px;
 }
+.tt {
+    height: auto;
+    background-color: silver;
+}
+.footer {
+    text-align: center;
+    font-size: 15px;
+}
+.checkbox{
+    text-align: left;
+}
+#cb{
+    width: 20px;
+    height: 20px;
+    background-color: silver;
+    margin: 0;
+}
+.commit{
+    padding-left: 30px;
+}
+
