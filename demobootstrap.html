@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Bootstrap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/demobootstrap.css">
+</head>
+<body>
+
+  <header class="col-xs-12" style="text-align: center" >
+      <div class="container" style="color: aqua">
+        CLOTHING
+      </div>
+  </header>
+
+
+    <nav class="nav clo-xs-12">
+        <div class="container">
+
+        </div>
+    </nav>
+
+<section class="main col-xs-12">
+    <ul class="nd list-inline">
+        <li>
+            <h2 class="name text-center text-muted">name</h2>
+            <img class="anh-responsive center-block " src="https://dscnnwjxnwl3f.cloudfront.net/media/catalog/product/cache/584039753b87a8d227764e04fc461e3e/s/o/soup_g__1.jpg" />
+            <h3 class="price text-center text-primary">"pr</h3>
+        </li>
+    </ul>
+</section>
+
+
+<footer class="footer col-xs-12">
+    <div class="container">
+        <div class="box-2 col-md-12"></div>
+    </div>
+</footer>
+    <div>
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="home">.HIHIHIHI Home page</div>
+            <div role="tabpanel" class="tab-pane" id="profile">Profile asdasd</div>
+            <div role="tabpanel" class="tab-pane" id="messages">De nhi hihihi</div>
+            <div role="tabpanel" class="tab-pane" id="settings">Settings</div>
+        </div>
+
+    </div>
+
+    <script src="JS/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $.ajax(
+        {
+            url: "https://foodgroup.herokuapp.com/api/category/3",
+            method: "GET",
+            success: function (response) {
+                let foods = response.data.foods;
+                for (let i = 0; i < foods.length; i++) {
+                    let name = foods[i].name; // khai báo kiểu var và let.
+                    let anh = foods[i].image;
+                    let pr = foods[i].price;
+                    let x = "        <li>\n" +
+                        "            <h2 class=\"name text-center text-muted\">"+name+"</h2>\n" +
+                        "            <img class=\"anh-responsive center-block\" src="+anh+">\n"  +
+                        "            <h3 class=\"price text-center text-primary\">"+pr+"</h3>\n" +
+                        "        </li>";
+                    // let x = "        <li>\n" +
+                    //     "            <h2 class=\"name\">"+name+"</h2>\n" +
+                    //     "            <img class=\"anh\" src="+anh+">\n" +
+                    //     "            <h3 class=\"price\">"+pr+"</h3>\n" +
+                    //     "        </li>";
+
+                    $(".nd").append(x);
+                }
+            }
+        }
+    );
+</script>
+</body>
+</html>

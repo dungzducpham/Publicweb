@@ -1,0 +1,13 @@
+header{
+    background-color: silver;
+    height: 100px;
+}
+.container{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/*
+.nd li{
+    list-style: none;
+    text-align: center;
+}*/
